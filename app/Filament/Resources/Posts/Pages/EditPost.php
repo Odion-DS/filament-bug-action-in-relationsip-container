@@ -41,7 +41,7 @@ class EditPost extends EditRecord
                 Action::make('test_action')
                     ->label(fn($record) => $record::class)
                     ->action(fn($record) => dd($record)),
-                Action::make('inActionSchema')
+                Action::make('inSchema')
                 ->schema([
                     TextInput::make('model-relation')
                         ->label(fn($record) => dd($record::class)),
